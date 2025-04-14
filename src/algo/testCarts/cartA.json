@@ -1,0 +1,118 @@
+{
+  "items": [
+    {
+      "item_id": "item_060",
+      "item_name": "Turkish Meatball Soup",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Soups",
+      "price": 325,
+      "diet": "N",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Stars"
+    },
+    {
+      "item_id": "item_061",
+      "item_name": "Lebanese Fateh Salad",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Salads",
+      "price": 295,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_062",
+      "item_name": "Hummus Salad Bowl with Shawarma Chicken",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Salads",
+      "price": 325,
+      "diet": "N",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Puzzles"
+    },
+
+
+    {
+      "item_id": "item_023",
+      "item_name": "Harra Bara Kebab",
+      "item_category": "Starters",
+      "item_subcategory": "Indian Starters",
+      "price": 375,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_024",
+      "item_name": "Arbi Ke Kebab",
+      "item_category": "Starters",
+      "item_subcategory": "Kebabs",
+      "price": 375,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Puzzles"
+    },
+    {
+      "item_id": "item_025",
+      "item_name": "Multani Paneer Tikka",
+      "item_category": "Starters",
+      "item_subcategory": "Indian Starters",
+      "price": 395,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_026",
+      "item_name": "Veg Anari Seekh",
+      "item_category": "Starters",
+      "item_subcategory": "Indian Starters",
+      "price": 395,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Dogs"
+    },
+
+
+    {
+      "item_id": "item_007",
+      "item_name": "RYBA Yellow Dal Tadka",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 315,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_008",
+      "item_name": "Dal Makhani",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 355,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_009",
+      "item_name": "Soya Chaap Masala",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 355,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Stars"
+    }
+  ]
+}

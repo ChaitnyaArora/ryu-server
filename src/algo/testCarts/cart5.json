@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "item_id": "item_011",
+      "item_name": "Kadhai Paneer",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 395,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Stars"
+    },
+    {
+      "item_id": "item_030",
+      "item_name": "Turkish Spring Rolls (Cigar Borek)",
+      "item_category": "Starters",
+      "item_subcategory": "Turkish Starters",
+      "price": 295,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_063",
+      "item_name": "Baklava",
+      "item_category": "Desserts",
+      "item_subcategory": "Desserts",
+      "price": 385,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Puzzles"
+    },
+    {
+      "item_id": "item_081",
+      "item_name": "English Breakfast Tea",
+      "item_category": "Beverages",
+      "item_subcategory": "Hot Beverages",
+      "price": 249,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    }
+  ]
+}

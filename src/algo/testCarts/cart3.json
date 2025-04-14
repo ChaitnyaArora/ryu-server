@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "item_id": "item_063",
+      "item_name": "Baklava",
+      "item_category": "Desserts",
+      "item_subcategory": "Desserts",
+      "price": 385,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Puzzles"
+    },
+    {
+      "item_id": "item_064",
+      "item_name": "Turkish Classic Revani",
+      "item_category": "Desserts",
+      "item_subcategory": "Desserts",
+      "price": 385,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_065",
+      "item_name": "Ice-cream",
+      "item_category": "Desserts",
+      "item_subcategory": "Desserts",
+      "price": 285,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Stars"
+    }
+  ]
+}

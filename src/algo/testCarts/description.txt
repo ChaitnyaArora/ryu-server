@@ -1,0 +1,34 @@
+For Recommendation 1:
+
+  NO DESSERTS (0 desserts from cart)
+    cart1 - All bevs exhausted from menuCart
+    cart2 - Only 1 bev in menuCart
+    cart3 - >=2 bevs in menuCart
+
+  >=1 DESSERTS
+    cart4 - No bev in menuCart (shows filterByFlavify as well (since only 1 horse available, if we change ice-cream w/ baklava in cart, we'll get random b/w ice-cream and revani))
+    cart5 - >=1 bev in menuCart / generic test
+
+  cart6 - test filterByFlavify (for desserts)
+
+For Recommendation 2:
+  CartD subcases left
+  CartE subcase left
+  CartF subcase left
+  CartG 1st subcase left
+  CartH subcase left
+  CartI subcase left
+
+  CartK -> checks for all 3 recommendations for same category
+  CartL -> checks for < 3 recommendations
+
+
+NOTE: have to account for item quantity. will need to change all carts therefore will do this at the end. (1 change)
+
+
+cart = {
+  item_id,
+  item_category, ##
+  diet, ##
+  quantity
+}

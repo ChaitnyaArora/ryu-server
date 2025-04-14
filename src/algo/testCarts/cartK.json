@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "item_id": "item_059",
+      "item_name": "Turkish Vegetable Soup",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Soups",
+      "price": 295,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Stars"
+    },
+    {
+      "item_id": "item_060",
+      "item_name": "Turkish Meatball Soup",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Soups",
+      "price": 325,
+      "diet": "N",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Stars"
+    },
+    {
+      "item_id": "item_061",
+      "item_name": "Lebanese Fateh Salad",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Salads",
+      "price": 295,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_062",
+      "item_name": "Hummus Salad Bowl with Shawarma Chicken",
+      "item_category": "Soups & Salads",
+      "item_subcategory": "Salads",
+      "price": 325,
+      "diet": "N",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Puzzles"
+    },
+
+
+
+    {
+      "item_id": "item_007",
+      "item_name": "RYBA Yellow Dal Tadka",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 315,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_008",
+      "item_name": "Dal Makhani",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 355,
+      "diet": "V",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Horses"
+    },
+    {
+      "item_id": "item_016",
+      "item_name": "Ryba's Red Chicken Korma",
+      "item_category": "Main Course",
+      "item_subcategory": "Indian",
+      "price": 485,
+      "diet": "N",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Dogs"
+    },
+    {
+      "item_id": "item_019",
+      "item_name": "Kuzu Guvec Turkish Curry (Chicken)",
+      "item_category": "Main Course",
+      "item_subcategory": "Turkish",
+      "price": 485,
+      "diet": "N",
+      "is_available": true,
+      "is_quickbite": false,
+      "flavify_category": "Dogs"
+    }
+  ]
+}
