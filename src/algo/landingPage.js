@@ -294,24 +294,24 @@ const predictLandingPage = async (menu) => {
 	const shuffledMenu = menu_universe_available.sort(() => Math.random() - 0.5);
 	const finalRecommendations = {};
 
-	['V'].forEach((diet) => {
+	['V', 'E', 'N'].forEach((diet) => {
 		const recommendations = [];
 		const recommendedItems = [];
 		let menu_universe_diet = [];
-		// if (diet === 'E') {
-		// 	menu_universe_diet = shuffledMenu.filter(
-		// 		(item) => item.diet === 'V' || item.diet === diet
-		// 	);
-		// } else if (diet === 'V') {
+		if (diet === 'E') {
+			menu_universe_diet = shuffledMenu.filter(
+				(item) => item.diet === 'V' || item.diet === diet
+			);
+		} else if (diet === 'V') {
 			menu_universe_diet = shuffledMenu.filter((item) => item.diet === diet);
-		// } else {
-		// 	menu_universe_diet = shuffledMenu.filter(
-		// 		(item) =>
-		// 			item.item_category === 'Desserts' ||
-		// 			item.item_category === 'Beverages' ||
-		// 			item.diet === diet
-		// 	);
-		// }
+		} else {
+			menu_universe_diet = shuffledMenu.filter(
+				(item) =>
+					item.item_category === 'Desserts' ||
+					item.item_category === 'Beverages' ||
+					item.diet === diet
+			);
+		}
 
 		recommendations.push(getCombo1(menu_universe_diet, recommendedItems, maxDiscount));
 		recommendations.push(getCombo2(menu_universe_diet, recommendedItems, maxDiscount));
