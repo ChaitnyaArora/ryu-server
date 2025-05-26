@@ -5,6 +5,7 @@ import apiRoutes from './src/routes/diner/apiRoutes.js';
 import adminApiRoutes from './src/routes/admin/adminApiRoutes.js';
 import logger from './src/utils/logger.js';
 import attachLogger from './src/middleware/attachLogger.js';
+import { runCronJobs } from './src/cronJobs/cron.js';
 
 const app = express();
 const port = process.env.PORT || 3005;
@@ -104,6 +105,8 @@ app.use('/api/v1', apiKeyCheck, apiRoutes);
 app.use((req, res) => {
 	res.status(404).json({ error: 'Route not found' });
 });
+
+runCronJobs()
 
 // Error handling middleware
 app.use((err, req, res, next) => {

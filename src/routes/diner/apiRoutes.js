@@ -6,6 +6,7 @@ import placeOrderRoute from './placeOrderRoute.js';
 import customerInfoRoute from './customerInfoRoute.js';
 import customerPreferenceRoute from './customerPreferenceRoute.js';
 import updateSubOrderRoute from './updateSubOrderRoute.js';
+import reviewRoute from './reviewRoute.js';
 
 const router = express.Router();
 
@@ -16,5 +17,6 @@ router.use('/placeorder', placeOrderRoute);
 router.use('/customerinfo', customerInfoRoute);
 router.use('/customerpreference', customerPreferenceRoute);
 router.use('/updatesuborder', updateSubOrderRoute);
+router.use('/rating', reviewRoute);
 
 export default router;
