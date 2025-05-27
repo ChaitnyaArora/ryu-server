@@ -66,19 +66,23 @@ const sendDailyReport = async () => {
       const { data: supabaseCustData, error } = await supabase
       .from(process.env.SUPABASE_CUSTOMERS)
       .select('*')
-      .eq('order_id', order.order_id);
+      .eq('order_id', order.order_id).single();
+      const { data: supabaseTableData, tableError } = await supabase
+      .from(process.env.SUPABASE_TABLES)
+      .select('*')
+      .eq('table_id', meta?.table_id).single();
 
-      console.log([ order ])
+      console.log({supabaseCustData, meta, supabaseTableData})
       order.order_info.forEach((subOrder) => {
         mergedData.push({
-          orderId: order.order_id,
-          tableId: meta?.table_id || 'N/A',
-          subOrderId: subOrder.sub_order_id,
+        //   orderId: order.order_id,
+          tableId: supabaseTableData?.table_number,
+        //   subOrderId: subOrder.sub_order_id,
           time: subOrder.time,
           total: subOrder.subOrder_total,
           discount: subOrder.subOrder_discount,
-          customerName: supabaseCustData?.[0].name,
-          phoneNumber: supabaseCustData?.[0].phone,
+          customerName: supabaseCustData?.name,
+          phoneNumber: supabaseCustData?.phone,
         //   comment: subOrder.comment || '',
           items: subOrder.items.map(i => `${i.items?.map(ii => ii.item_name).join(" , ") || 'Unknown'} (x${i.qty})`).join('; '),
           review: order.review || '',

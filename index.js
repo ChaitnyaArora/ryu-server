@@ -1,11 +1,11 @@
-import express from 'express';
 import cors from 'cors';
+import express from 'express';
 import { rateLimit } from 'express-rate-limit';
-import apiRoutes from './src/routes/diner/apiRoutes.js';
-import adminApiRoutes from './src/routes/admin/adminApiRoutes.js';
-import logger from './src/utils/logger.js';
-import attachLogger from './src/middleware/attachLogger.js';
 import { runCronJobs } from './src/cronJobs/cron.js';
+import attachLogger from './src/middleware/attachLogger.js';
+import adminApiRoutes from './src/routes/admin/adminApiRoutes.js';
+import apiRoutes from './src/routes/diner/apiRoutes.js';
+import logger from './src/utils/logger.js';
 
 const app = express();
 const port = process.env.PORT || 3005;
