@@ -90,7 +90,21 @@ const sendDailyReport = async () => {
       });
     }
 
-    console.log({ mergedData });
+    const totalAmount = mergedData.reduce((sum, row) => sum + (Number(row.total) || 0), 0);
+    const totalDiscount = mergedData.reduce((sum, row) => sum + (Number(row.discount) || 0), 0);
+
+    mergedData.push({
+      tableId: 'GRAND TOTAL',
+      time: '-',
+      total: totalAmount,
+      discount: totalDiscount,
+      customerName: '-',
+      phoneNumber: '-',
+      items: '-',
+      review: '-',
+    });
+
+    // console.log({ mergedData });
 
     // Convert to CSV
     const json2csv = new Parser();
@@ -99,30 +113,30 @@ const sendDailyReport = async () => {
     console.log('CSV generated successfully.', csv);
 
     // Email Setup
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.REPORT_EMAIL,
-        pass: process.env.REPORT_EMAIL_PASS,
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   service: 'gmail',
+    //   auth: {
+    //     user: process.env.REPORT_EMAIL,
+    //     pass: process.env.REPORT_EMAIL_PASS,
+    //   },
+    // });
 
-    const mailOptions = {
-      from: process.env.REPORT_EMAIL,
-    //   to: 'lakhanishubham9750@gmail.com',
-      to: process.env.CLIENT_EMAIL,
-      cc: process.env.CLIENT_EMAIL_CC,
-      subject: `Daily Order Report - ${dayjs().format('DD MMM YYYY')}`,
-      text: 'Please find attached the order report for today.',
-      attachments: [
-        {
-          filename: `order-report-${today}.csv`,
-          content: csv,
-        },
-      ],
-    };
+    // const mailOptions = {
+    //   from: process.env.REPORT_EMAIL,
+    // //   to: 'lakhanishubham9750@gmail.com',
+    //   to: process.env.CLIENT_EMAIL,
+    //   cc: process.env.CLIENT_EMAIL_CC,
+    //   subject: `Daily Order Report - ${dayjs().format('DD MMM YYYY')}`,
+    //   text: 'Please find attached the order report for today.',
+    //   attachments: [
+    //     {
+    //       filename: `order-report-${today}.csv`,
+    //       content: csv,
+    //     },
+    //   ],
+    // };
 
-    await transporter.sendMail(mailOptions);
+    // await transporter.sendMail(mailOptions);
     console.log('✅ Daily report sent successfully.');
   } catch (err) {
     console.error('❌ Error generating/sending daily report:', err);
